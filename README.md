@@ -1,7 +1,6 @@
-# README
+# Tweet App (Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My first Ruby on Rails project!
 
 Things you may want to cover:
 
