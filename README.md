@@ -9,5 +9,6 @@ This is my first Ruby project.
 - Sqlite3
 
 
+## Others
 - Developed using a RESTful API server in Ruby on Rails.
 - Built a front end interface, and created a user authentication function with Ruby on Rails.
