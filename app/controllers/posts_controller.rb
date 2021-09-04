@@ -24,6 +24,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
+      flash[:notice] = "Post edited!"
       redirect_to("/posts/index")
     else
       render("posts/edit")
