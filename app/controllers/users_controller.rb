@@ -15,9 +15,12 @@ class UsersController < ApplicationController
     @user = User.new(
       name: params[:name],
       email: params[:email],
-      image_name: "default_user.png"
+      image_name: "default_user.png",
+      password: params[:password]
     )
     if @user.save
+      session[:user_id] = @user.id
+      session[:user_name] = @user.name
       flash[:notice] = "New user created!"
       redirect_to("/users/#{@user.id}")
     else
