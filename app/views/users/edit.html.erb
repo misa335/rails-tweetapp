@@ -1,0 +1,16 @@
+<div class="main users-edit">
+    <div class="container">
+        <div class="form-heading">Edit Account</div>
+        <div class="form users-form">
+            <div class="form-body">
+                <%= form_tag("/users/#{@user.id}/update") do %>
+                    <p>Username</p>
+                    <input value="<%= @user.name %>">
+                    <p>Email Address</p>
+                    <input value="<%= @user.email %>">
+                    <input type="submit" value="Save">
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
