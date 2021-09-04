@@ -39,12 +39,15 @@ class UsersController < ApplicationController
       image = params[:image]
       File.binwrite("public/user_images/#{@user.image_name}", image.read)
     end
-    
+
     if @user.save
       flash[:notice] = "Account updated!"
       redirect_to("/users/#{@user.id}")
     else
       render("users/edit")
     end
+  end
+
+  def login_form
   end
 end
