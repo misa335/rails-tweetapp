@@ -1,24 +1,14 @@
-# README
+# Tweetie
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app that allows users to post tweets.
+This is my first Ruby project.
 
-Things you may want to cover:
+## Technologies Used:
+- Ruby / Ruby on Rails
+- SCSS
+- Sqlite3
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Others
+- Developed using a RESTful API server in Ruby on Rails.
+- Built a front end interface, and created a user authentication function with Ruby on Rails.
