@@ -2,11 +2,12 @@
     <div class="container">
         <h1 class="users-heading">Users</h1>
         <% @users.each do | user | %>
-        <div class="users-index-item">
-            <div class="user-right">
-            <%= link_to(user.name, "/users/#{user.id}") %>
+            <div class="users-index-item">
+                <div class="user-right">
+                    <img class="user-left" src="<%= "/user_images/#{user.image_name}" %>" 
+                    <%= link_to(user.name, "/users/#{user.id}") %>
+                </div>
             </div>
-        </div>
         <% end %>
     </div>
 </div>
