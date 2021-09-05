@@ -11,6 +11,11 @@
             <div class="post-time">
                 <%= @post.created_at %>
             </div>
+            <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+                liked
+            <% else %>
+                <%= link_to("like!", "/likes/#{@post.id}/create", {method: "post"}) %>
+            <% end %>
             <% if @post.user_id == @current_user.id %>
                 <div class="post-menus">
                     <%= link_to("Edit", "/posts/#{@post.id}/edit") %>

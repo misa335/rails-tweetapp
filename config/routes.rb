@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post "likes/:post_id/create", to: "likes#create"
+
   get "login", to: "users#login_form"
   post "login", to: "users#login"
   post "logout", to: "users#logout"
