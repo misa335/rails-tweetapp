@@ -12,7 +12,7 @@
                 <%= @post.created_at %>
             </div>
             <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
-                liked
+                <%= link_to("liked", "/likes/#{@post.id}/destroy", {method: "post"}) %>
             <% else %>
                 <%= link_to("like!", "/likes/#{@post.id}/create", {method: "post"}) %>
             <% end %>
