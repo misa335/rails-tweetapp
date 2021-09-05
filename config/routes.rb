@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "users/:id", to: "users#show"
   get "users/:id/edit", to: "users#edit"
   post "users/:id/update", to: "users#update"
+  get "users/:id/likes", to: "users#likes"
 
   get "posts/index", to: "posts#index"
   get "posts/new", to: "posts#new"
