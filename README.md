@@ -2,6 +2,7 @@
 
 An app that allows users to post tweets.
 This is my first Ruby project.
+<br/>
 Tweetie: https://tweetieapp.herokuapp.com
 
 <img src="./tweetie.png" width="50%" height="50%">
