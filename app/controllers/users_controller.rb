@@ -58,7 +58,6 @@ class UsersController < ApplicationController
     @user = User.find_by(email: params[:email], password: params[:password])
     if @user
       session[:user_id] = @user.id
-      session[:user_name] = @user.name
       flash[:notice] = "Welcome, #{@user.name}!"
       redirect_to("/posts/index")
     else
@@ -71,7 +70,6 @@ class UsersController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    session[:user_name] = nil
     flash[:notice] = "Logged out. Bye!"
     redirect_to("/login")
   end
