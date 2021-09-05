@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   post "posts/:id/update", to: "posts#update"
   post "posts/:id/destroy", to: "posts#destroy"
 
-  get "/", to: "home#top"
+  root "home#top"
   get "about", to: "home#about"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
