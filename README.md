@@ -6,9 +6,10 @@ This is my first Ruby project.
 Tweetie: https://tweetieapp.herokuapp.com
 
 <img src="./tweetie.png" width="50%" height="50%">
-<img src="./tweets.png" width="50%" height="50%">
-<img src="./userpage.png" width="50%" height="50%">
-
+<div display="flex">
+    <img src="./tweets.png" width="50%" height="50%">
+    <img src="./userpage.png" width="50%" height="50%">
+</div>
 ## Technologies Used:
 - Ruby / Ruby on Rails
 - SCSS
